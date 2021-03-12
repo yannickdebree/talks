@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Docker presentation</title>
+
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+    />
+
+    <style>
+      img {
+        height: 30vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Docker presentation</h2>
+          <a href="../../images/docker-logo.png">
+            <img src="../../images/docker-logo.png" />
+          </a>
+        </section>
+        <section>
+          <h3>Preamble</h3>
+          <p>
+            How to resolve environment interferences between several machines ?
+          </p>
+        </section>
+        <section>
+          <h3>Virtual Machines</h3>
+          <ul>
+            <li>Run a virtual emulation of a computer machine</li>
+            <li>Costly in terms of resources.</li>
+            <li>Difficult to use</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Containers</h3>
+          <a href="../../images/vm_vs_containers.png">
+            <img src="../../images/vm_vs_containers.png" />
+          </a>
+        </section>
+        <section>
+          <h3>Docker</h3>
+          <ul>
+            <li>Containers virtualization software</li>
+            <li>Free</li>
+            <li>Multi-platforme</li>
+            <li>Popular</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Images vs. Containers</h3>
+          <ul>
+            <a href="../../images/port.jpg">
+              <img src="../../images/port.jpg" />
+            </a>
+            <a href="../../images/containers.jpg">
+              <img src="../../images/containers.jpg" />
+            </a>
+          </ul>
+        </section>
+        <section>
+          <h3>Let's move on :</h3>
+          <a
+            target="_blank"
+            href="https://github.com/yannickdebree/docker-presentation"
+            >https://github.com/yannickdebree/docker-presentation</a
+          >
+        </section>
+        <section>
+          <h3>Sources</h3>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=wi-MGFhrad0"
+                >Docker Beginner Tutorial</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://docs.docker.com/"
+                >Docker documentation</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: "slide",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
+      });
+    </script>
+  </body>
+</html>

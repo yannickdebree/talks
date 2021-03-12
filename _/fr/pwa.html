@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Les PWA, les applications de demain ?</title>
+
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/night.css" id="theme" />
+
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+    />
+
+    <style>
+      img {
+        height: 30vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Les PWA, les applications de demain ?</h2>
+        </section>
+        <section>
+          <h3>Comment accéder à un service informatique ?</h3>
+          <a href="../../images/iot-schema.png">
+            <img src="../../images/iot-schema.png" />
+          </a>
+        </section>
+        <section>
+          <h3>Petite contrainte...</h3>
+          <ul>
+            <li class="fragment fade-right">
+              Mobile + Web => 2 services => 2 maintenances => 2 fois plus
+              contraignant.
+            </li>
+            <li class="fragment fade-right">Solution : les <u>PWA</u> !</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Les P.W.Quoi ?</h3>
+          <p>
+            Les <em>Progressive Web Applications</em> sont un type de service
+            délivrées depuis le Web.
+          </p>
+          <a href="../../images/mobile-pwa-screen.jpg">
+            <img src="../../images/mobile-pwa-screen.jpg" />
+          </a>
+        </section>
+        <section>
+          <h3>Version Desktop :</h3>
+          <a href="../../images/desktop-pwa-screen.png">
+            <img src="../../images/desktop-pwa-screen.png" />
+          </a>
+        </section>
+        <section>
+          <h3>Avantages</h3>
+          <ul>
+            <li class="fragment fade-right">Gain de temps de développement,</li>
+            <li class="fragment fade-right">
+              Passage par les Stores non requis,
+            </li>
+            <li class="fragment fade-right">Accés au service plus rapide,</li>
+            <li class="fragment fade-right">Mode offline disponible,</li>
+            <li class="fragment fade-right">Peu gourmand en ressources,</li>
+            <li class="fragment fade-right">
+              Accés à certaines fonctionnalités des applications natives
+              (notifications push, géolocalisation,...).
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Inconvénients</h3>
+          <ul>
+            <li class="fragment fade-right">
+              Pas (encore) de support sur l'ensemble des navigateurs,
+            </li>
+            <li class="fragment fade-right">
+              Pas d'accés à autant de fonctionnalités que les applications
+              natives (bluetooth, géolocalisation intérieure,...).
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>La fin des applications mobiles natives ?</h3>
+          <p>Non, car :</p>
+          <ul>
+            <li class="fragment fade-right">
+              Beaucoup de fonctionnalités du téléphone ne sont pas accessibles
+              depuis une PWA,
+            </li>
+            <li class="fragment fade-right">
+              Le marché des applications mobiles est encore très important.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Conclusion</h3>
+          <ul>
+            <li class="fragment fade-right">
+              Témoignage de l'ampleur phénoménale que prend le Web,
+            </li>
+            <li class="fragment fade-right">
+              Importance des applications mobiles dans notre économie,
+            </li>
+            <li class="fragment fade-right">
+              Evolution exponentielle du Web => de beaux jours à venir pour la
+              PWA :)
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Sources</h3>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.blogdumoderateur.com/pwa-progressive-web-apps-dev-web-mobile/"
+                >PWA : les progressive web apps vont-elles réconcilier le
+                développement web et mobile ?</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://medium.com/inside-smartapps/application-native-vs-progressive-web-app-que-choisir-e5c30c839f55"
+                >Application native VS Progressive Web App : que choisir ?</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: "slide",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
