@@ -1,18 +1,18 @@
-image=talks
-container=$(image)_talks
+IMAGE=node:lts-alpine
+CONTAINER=talks
+WORKDIR=/$(CONTAINER)
 
 all: build serve
 
 .PHONY: build
 build:
-	docker build -t $(image) .
-	docker run --rm -v $(PWD):/talks $(image) yarn
+	docker run --rm -w $(WORKDIR) -v $(PWD):$(WORKDIR) $(IMAGE) yarn
 
 .PHONY: serve
 serve:
-	docker run -d -p 8080:8000 -p 35729:35729 -v $(PWD):/talks --name $(container) $(image)
+	docker run -d -p 8080:8000 -p 35729:35729 -w $(WORKDIR) -v $(PWD):$(WORKDIR) --name $(CONTAINER) $(IMAGE) yarn start
 
 .PHONY: clean
 clean:
-	docker stop $(container)
-	docker rm $(container)
+	docker stop $(CONTAINER)
+	docker rm $(CONTAINER)

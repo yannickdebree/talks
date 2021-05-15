@@ -5,7 +5,6 @@ examples
 .npmignore
 CONTRIBUTING.md
 demo.html
-Dockerfile
 LICENCE
 Makefile
 README.md
